@@ -1,0 +1,74 @@
+.infinity-box-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.80);
+    z-index: 0;
+    opacity: 0;
+    display: none;
+}
+
+.infinity-box-inner {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+}
+
+.infinity-box-content {
+    width: 100%;
+    height: 100%;
+}
+
+.infinity-caption {
+    background-color: rgba(0, 0, 0, 0.89);
+    color: white;
+    padding: 10px;
+}
+
+.infinity-controls {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+    z-index: 25;
+    font-size: 42px;
+    color: rgba(255, 255, 255, 0.65);
+
+}
+
+.infinity-controls .previous,
+.infinity-controls .next {
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.infinity-controls .previous:hover,
+.infinity-controls .next:hover{
+    color: white;
+}
+
+.infinity-controls .next {
+    float: right;
+}
+
+.infinity-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.65);
+    cursor: pointer;
+}
+
+.infinity-close:hover {
+    color: white;
+}
